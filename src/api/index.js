@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://live-quiz-backend.vercel.app/api";
+const API_URL = "https://desolate-peak-12816-fc8e97363b08.herokuapp.com/api";
 
 export const register = async (userData) => {
   return await axios.post(`${API_URL}/auth/register`, userData);

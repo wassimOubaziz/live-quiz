@@ -18,7 +18,7 @@ const StudentQuiz = () => {
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [redirect, setRedirect] = useState(false);
 
-  const socket = io("https://live-quiz-backend.vercel.app", {
+  const socket = io("https://desolate-peak-12816-fc8e97363b08.herokuapp.com", {
     transports: ["websocket"],
   });
 

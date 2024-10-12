@@ -19,7 +19,7 @@ const TeacherQuiz = () => {
   const [finalPoints, setFinalPoints] = useState({});
   const [redirect, setRedirect] = useState(false);
 
-  const socket = io("https://live-quiz-backend.vercel.app", {
+  const socket = io("https://desolate-peak-12816-fc8e97363b08.herokuapp.com", {
     transports: ["websocket"],
   });
 
@@ -27,7 +27,7 @@ const TeacherQuiz = () => {
     const fetchQuiz = async () => {
       try {
         const response = await axios.get(
-          `https://live-quiz-backend.vercel.app/api/quiz/code/${quizId}`
+          `https://desolate-peak-12816-fc8e97363b08.herokuapp.com/api/quiz/code/${quizId}`
         );
         setQuiz(response.data);
         setCurrentQuestion(response.data.questions[0]);
