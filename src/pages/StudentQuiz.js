@@ -18,7 +18,7 @@ const StudentQuiz = () => {
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [redirect, setRedirect] = useState(false);
 
-  const socket = io("http://localhost:5000");
+  const socket = io("https://live-quiz-backend.vercel.app/");
 
   useEffect(() => {
     socket.emit("joinQuiz", { quizId, userId: localStorage.getItem("userId") });

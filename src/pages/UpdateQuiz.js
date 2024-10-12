@@ -16,7 +16,7 @@ const UpdateQuiz = () => {
     const fetchQuiz = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/quiz/${id}`
+          `https://live-quiz-backend.vercel.app/api/quiz/${id}`
         );
         setQuiz(response.data);
       } catch (error) {
@@ -60,7 +60,10 @@ const UpdateQuiz = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/api/quiz/${id}`, quiz);
+      await axios.put(
+        `https://live-quiz-backend.vercel.app/api/quiz/${id}`,
+        quiz
+      );
       toast.success("Quiz updated successfully!");
       navigate("/view-quizzes");
     } catch (error) {
