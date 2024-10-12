@@ -75,7 +75,7 @@ const AiQuiz = () => {
       </div>
 
       {quiz && (
-        <div className="mt-4 bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
+        <div className="mt-4 max-w-md mx-auto bg-gray-100 dark:bg-gray-800 p-8 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg transition-colors duration-200">
           <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">
             {quiz.title}
           </h3>

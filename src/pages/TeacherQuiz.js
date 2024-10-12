@@ -19,7 +19,7 @@ const TeacherQuiz = () => {
   const [finalPoints, setFinalPoints] = useState({});
   const [redirect, setRedirect] = useState(false);
 
-  const socket = io("https://live-quiz-backend.vercel.app/");
+  const socket = io("https://live-quiz-backend.vercel.app");
 
   useEffect(() => {
     const fetchQuiz = async () => {

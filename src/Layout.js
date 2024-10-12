@@ -4,7 +4,10 @@ import ThemeToggle from "./components/ThemeToggle"; // Ensure the correct import
 
 const Layout = ({ children, darkMode, toggleDarkMode }) => {
   // check if is in home page don't show back button
-  const isHome = window.location.pathname === "/";
+  const isHome =
+    window.location.pathname === "/" ||
+    window.location.pathname === "/login" ||
+    window.location.pathname === "/register";
 
   return (
     <div className={`min-h-screen ${darkMode ? "dark" : ""}`}>
