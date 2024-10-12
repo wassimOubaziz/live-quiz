@@ -36,7 +36,7 @@ To get started with the application, follow these steps:
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/wassimOubaziz/live-quiz.git
 cd ai-quiz-app
 ```
 
