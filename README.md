@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# AI Quiz Application Front-end / Back-end will be published soon or contact me
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The AI Quiz Application is a web-based platform that allows users to generate quizzes using AI technology. Users can enter prompts to create quizzes, which can then be sent to a database for storage. The application is built using Next.js, Express.js, MongoDB, and integrates AI to dynamically generate quiz content based on user input.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **AI-Generated Quizzes:** Users can input prompts to generate quizzes with questions and options.
+- **User Authentication:** Secure access with token-based authentication.
+- **Database Integration:** Store quizzes in MongoDB for persistent storage.
+- **User-Friendly Interface:** Intuitive UI for easy interaction and quiz management.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:**
+  - Next.js: React framework for server-rendered applications.
+  - Tailwind CSS: Utility-first CSS framework for styling.
+  - Axios: Promise-based HTTP client for making API requests.
 
-### `npm test`
+- **Backend:**
+  - Express.js: Web framework for building RESTful APIs.
+  - MongoDB: NoSQL database for storing quiz data.
+  - Mongoose: ODM for MongoDB to define schemas and models.
+  - Groq SDK: For generating quizzes using AI.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To get started with the application, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or later)
+- MongoDB (local or cloud instance)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clone the Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/wassimOubaziz/live-quiz.git
+cd ai-quiz-app
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For both frontend and backend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Set Up Environment Variables
 
-## Learn More
+Create a `.env` file in the root directory of your project and add the following variables:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+MONGODB_URI=<your-mongodb-connection-string>
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Start the Application
 
-### Code Splitting
+1. **Start the Backend Server**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   In the backend directory (e.g., `backend`):
 
-### Analyzing the Bundle Size
+   ```bash
+   node server.js
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Start the Frontend Development Server**
 
-### Making a Progressive Web App
+   In the frontend directory (e.g., `frontend`):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm run dev
+   ```
 
-### Advanced Configuration
+Your application will be available at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage
 
-### Deployment
+1. **Create a Quiz:**
+   * Enter a prompt for the quiz in the input field and click the "Generate Quiz" button.
+   * View the generated quiz with questions and options.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. **Save to Database:**
+   * Toggle the option to save the quiz to the database. If enabled, click the button to send the quiz to the database.
 
-### `npm run build` fails to minify
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* `POST /api/quizzes`: Generates and saves a quiz based on user input.
+   * **Request Body:**
+      * `userInput`: The prompt for generating the quiz.
+      * `userId`: The ID of the user creating the quiz.
+      * `token`: Authentication token.
+      * `isQuiz`: Boolean indicating if the input is for a quiz.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+* Next.js
+* MongoDB
+* Tailwind CSS
+
+---
+
+### Customization Tips:
+1. **Repository URL:** Replace `https://github.com/wassimOubaziz/live-ai-quiz/` with the actual URL of your GitHub or code repository.
+
+contact linkedin url: https://www.linkedin.com/in/wassim-oubaziz/
+
+Feel free to adapt this template to better match your project's goals and features!
