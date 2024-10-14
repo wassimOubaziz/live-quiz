@@ -47,7 +47,7 @@ const Login = () => {
           </label>
           <input
             type="text"
-            className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+            className="w-full mx-auto bg-gray-100 dark:bg-gray-800 p-2 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg transition-colors duration-200"
             value={formData.username}
             onChange={(e) =>
               setFormData({ ...formData, username: e.target.value })
@@ -61,7 +61,7 @@ const Login = () => {
           </label>
           <input
             type="password"
-            className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+            className="w-full p-2 mx-auto bg-gray-100 dark:bg-gray-800 -8 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg transition-colors duration-200"
             value={formData.password}
             onChange={(e) =>
               setFormData({ ...formData, password: e.target.value })

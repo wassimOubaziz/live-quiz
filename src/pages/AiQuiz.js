@@ -87,7 +87,7 @@ const AiQuiz = () => {
             {quiz.questions.slice(0, 3).map((question, index) => (
               <div
                 key={index}
-                className="mb-4 bg-white dark:bg-gray-600 p-3 rounded-lg"
+                className=" bg-gray-100 dark:bg-gray-800 p-8 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg transition-colors duration-200"
               >
                 <h4 className="font-semibold text-gray-900 dark:text-gray-100">
                   {index + 1}. {question.question}
@@ -106,7 +106,7 @@ const AiQuiz = () => {
             } text-white p-2 rounded transition-colors duration-200`}
             disabled={!sendToDatabase}
           >
-            Save Quiz to Database
+            Quiz saved to Data Base
           </button>
         </div>
       )}
