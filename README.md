@@ -4,6 +4,9 @@
 
 The AI Quiz Application is a web-based platform that allows users to generate quizzes using AI technology. Users can enter prompts to create quizzes, which can then be sent to a database for storage. The application is built using Next.js, Express.js, MongoDB, and integrates AI to dynamically generate quiz content based on user input.
 
+## Demo
+[LINK](https://wlive-quiz.vercel.app/)
+
 ## Features
 
 - **AI-Generated Quizzes:** Users can input prompts to generate quizzes with questions and options.
