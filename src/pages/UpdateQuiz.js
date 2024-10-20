@@ -16,7 +16,7 @@ const UpdateQuiz = () => {
     const fetchQuiz = async () => {
       try {
         const response = await axios.get(
-          `https://desolate-peak-12816-fc8e97363b08.herokuapp.com/api/quiz/${id}`
+          `https://quiz-live-620d74814e52.herokuapp.com/api/quiz/${id}`
         );
         setQuiz(response.data);
       } catch (error) {
@@ -61,7 +61,7 @@ const UpdateQuiz = () => {
     e.preventDefault();
     try {
       await axios.put(
-        `https://desolate-peak-12816-fc8e97363b08.herokuapp.com/api/quiz/${id}`,
+        `https://quiz-live-620d74814e52.herokuapp.com/api/quiz/${id}`,
         quiz
       );
       toast.success("Quiz updated successfully!");
